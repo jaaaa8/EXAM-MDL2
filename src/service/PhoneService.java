@@ -117,13 +117,15 @@ public class PhoneService implements IPhoneService {
             return;
         }
         List<Phone> phones = getPhoneList();
-        System.out.println("Những điện thoại có tên gần giống với "+name+" là:");
         for (Phone phone : phones) {
             if (phone.getName().toLowerCase().contains(name.toLowerCase())) {
                 matchingPhones.add(phone);
             }
         }
-
+        System.out.println("Những điện thoại có tên gần giống với "+name+" là:");
+        for (Phone phone : matchingPhones) {
+            System.out.println(phone.getData());
+        }
     }
 
 

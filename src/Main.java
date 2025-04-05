@@ -72,6 +72,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Tìm tên điện thoại gần giống: ");
+                    sc.nextLine();
                     String name = sc.nextLine();
                     phoneService.findPhoneByName(name);
                     break;
